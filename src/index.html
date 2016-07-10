@@ -13,7 +13,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body style="padding-bottom: 100px">
+<body style="padding-bottom: 30px">
 
     <header class="page-header">
         <div class="page-header-left-wrap">
@@ -37,6 +37,10 @@
             <a href="#" class="page-header_auth_link">Login</a>
             <span class="page-header_auth_link-divider">|</span>
             <a href="#" class="page-header_auth_link">Registrieren</a>
+            <div class="login-popup hidden z-depth-2">
+                <input class="login-popup_text-input" type="email" placeholder="EMAIL">
+                <input class="login-popup_text-input" type="password" placeholder="PASSWORT">
+            </div>
         </div>
     </header>
 
@@ -107,6 +111,36 @@
             </div>
         </div>
 
+        <div class="complaint-view">
+            <img src="img/test2.png" class="complaint-view-img" alt="Complaint">
+
+            <div class="info">
+                <div class="author">
+                    <span>Beschwerde von</span>
+                    <br>
+                    Anna Müller
+                </div>
+
+                <div class="stats">
+                    <div class="item">
+                        <i class="material-icons">remove_red_eye</i> 5468
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">comment</i> 36
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">share</i> 12
+                    </div>
+                    <div class="item">
+                        <i class="material-icons">event_note</i> Vor 2 Tagen
+                    </div>
+                </div>
+                <div class="complaint-view-fab">
+                    AM
+                </div>
+            </div>
+        </div>
+
         <div class="content-wrapper">
             <div class="content_main">
                 <h3 class="section-heading">bestell-/kundennummer: 00192425</h3>
@@ -145,13 +179,13 @@
 
                     <div class="social-icons-and-author">
                         <div class="social-icons">
-                            <a href="#" class="social-icon social-icons-fb">
+                            <a href="#" class="social-icon social-icons-fb z-depth-1">
                                 <img src="img/facebook.svg" alt="Facebook">
                             </a>
-                            <a href="#" class="social-icon social-icons-twitter">
+                            <a href="#" class="social-icon social-icons-twitter z-depth-1">
                                 <img src="img/twitter.svg" alt="Twitter">
                             </a>
-                            <a href="#" class="social-icon social-icons-vk">
+                            <a href="#" class="social-icon social-icons-vk z-depth-1">
                                 <img src="img/vk.svg" alt="VK">
                             </a>
                         </div>
@@ -255,6 +289,48 @@
                         </span>
                     </div>
                 </div>
+
+                <div class="company-answer highlighted-main z-depth-1">
+                    <div class="type-icon-wrapper">
+                        <i class="material-icons">work</i>
+                    </div>
+                    <div class="company">
+                        <b>Firmen-Antwort von:</b> ExtraEnergie GmbH
+                    </div>
+                    <div class="department">
+                        <b>Abteilung</b> Kundenservice
+                    </div>
+                    <div class="answer-speed">
+                        SOFORTANTWORT
+                    </div>
+                    <div class="answer-date">
+                        nach 2 Monaten
+                        <br>
+                        31.07.2012 | 15:16
+                    </div>
+                    <div class="body">
+                        Sehr geehrter Kunde,
+                        <br>
+                        <br>
+                        viele Dank für Ihren Eitrag.
+                        <br>
+                        <br>
+                        Einige unserer Tarife umfassen eine Preissicherheitsvariante,
+                        eine Preisfixierung oder aber eine Energiepreisgarantie.
+                        Je nach vereinbartem Tarif gewähren unsere Preissicherheitsvarianten
+                        gewisse Preisbestandteile, wie Steuern, Abgaben sowie Netznutzungsentgelte
+                        während der vereinbarten Vertagslaufzeit. Die für
+                        Ihren. Tarif gültigen Regein entnehmen Sie bitte
+                        Ihren Vertragsunterlagen sowie Ihren AGBs.
+                        <br>
+                        Mit freundlichen Grüßen
+                        <br>
+                        <br>
+                        Ihre prioenergie
+                    </div>
+                </div>
+
+                <!-- Put stars here  -->
             </div>
 
             <div class="content_sidebar">

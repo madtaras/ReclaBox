@@ -56,6 +56,7 @@
 .page-header_auth
   display: flex
   padding-right: 25px
+  position: relative
 
   &_link
     align-items: center
@@ -85,3 +86,33 @@
 
   &:hover
     color: $accent-color
+
+.login-popup
+  background: $white
+  height: 215px
+  position: absolute
+  right: 150px
+  top: calc(#{$page-header-height} - 20px)
+  transition: opacity .5s cubic-bezier(.55, 0, .1, 1)
+  width: 270px
+  z-index: 10
+
+  &.hidden
+    opacity: 0
+
+  .login-popup_text-input
+    border-bottom-color: $blue-gray
+    color: $blue-gray
+
+    &:focus
+      border: 0
+      box-shadow: none
+
+  ::-webkit-input-placeholder
+    color: $blue-gray
+
+  ::-moz-placeholder
+    color: $blue-gray
+
+  :-ms-input-placeholder
+    color: $blue-gray

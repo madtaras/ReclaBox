@@ -288,3 +288,114 @@ p.highlighted-accent
 
     &:hover
       text-decoration: underline
+
+
+.company-answer
+  font-size: 12px
+  margin-top: 15px
+  padding: 20px 17px
+  position: relative
+
+  &.highlighted-accent
+    border-left: 8px solid $accent-color
+
+  &.highlighted-main
+    border-left: 8px solid $blue-gray-darker
+
+  .type-icon-wrapper
+    align-items: center
+    border: 1px solid $light-gray-bg
+    border-radius: 3px
+    color: $accent-color
+    display: flex
+    height: 37px
+    justify-content: center
+    left: 24px
+    position: absolute
+    top: 18px
+    width: 37px
+
+    i
+      font-size: 20px
+
+  .company
+    margin-left: 70px
+    max-width: 280px
+
+  .department
+    margin-left: 70px
+    max-width: 280px
+
+  .answer-speed
+    color: $accent-color
+    font-style: italic
+    position: absolute
+    right: 24px
+    top: 20px
+
+  .answer-date
+    color: $gray
+    position: absolute
+    right: 24px
+    text-align: right
+    top: 40px
+
+  .body
+    margin-top: 30px
+
+.complaint-view
+  margin-top: 10px
+
+  .complaint-view-img
+    border: 1px solid $light-gray-bg
+    border-radius: 3px 3px 0 0
+    width: 100%
+
+  .info
+    background: $light-gray-bg
+    border-radius: 0 0 3px 3px
+    display: flex
+    height: 50px
+    justify-content: space-between
+    margin-top: -7px
+    padding: 0 12px 0 50px
+    position: relative
+
+    .author
+
+      span:first-child
+        color: $gray
+        font-size: 13px
+
+    .stats
+      display: flex
+      align-items: center
+
+      .item
+        align-items: center
+        background: $white
+        display: flex
+        float: left
+        font-size: 14px
+        height: 25px
+        margin-left: 10px
+        padding: 0 7px 0 7px
+
+        i
+          font-size: 18px
+          margin-right: 5px
+
+  .complaint-view-fab
+    align-items: center
+    background: $blue-gray
+    border-radius: 50%
+    color: $white
+    display: flex
+    font-size: 22px
+    font-weight: bold
+    height: 70px
+    justify-content: center
+    left: -35px
+    position: absolute
+    top: -35px
+    width: 70px

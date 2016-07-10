@@ -11,7 +11,7 @@
   var selectedNavLinkUnderline = $('.page-nav_selected-link-underline')
 
   var coords = document.querySelector('.page-nav_link.selected').getBoundingClientRect()
-  selectedNavLinkUnderline.css('top', coords.bottom - 5)
+  selectedNavLinkUnderline.css('top', coords.bottom - 5 + window.scrollY)
   selectedNavLinkUnderline.css('left', coords.left - 330)
   selectedNavLinkUnderline.css('width', coords.width)
 
@@ -22,17 +22,22 @@
     $(this).addClass('hover')
 
     var coords = document.querySelector('.page-nav_link.hover').getBoundingClientRect()
-    selectedNavLinkUnderline.css('top', coords.bottom - 5)
+    selectedNavLinkUnderline.css('top', coords.bottom - 5 + window.scrollY)
     selectedNavLinkUnderline.css('left', coords.left - 330)
     selectedNavLinkUnderline.css('width', coords.width)
 
     $(this).one('mouseleave', function () {
       $(this).removeClass('hover')
       var coords = document.querySelector('.page-nav_link.selected').getBoundingClientRect()
-      selectedNavLinkUnderline.css('top', coords.bottom - 5)
+      selectedNavLinkUnderline.css('top', coords.bottom - 5 + window.scrollY)
       selectedNavLinkUnderline.css('left', coords.left - 330)
       selectedNavLinkUnderline.css('width', coords.width)
       $('.page-nav_link.selected').addClass('hover')
     })
+  })
+
+  // show and hide login popup
+  $('.page-header_auth_link').click(function () {
+    $('.login-popup').toggleClass('hidden')
   })
 })()
