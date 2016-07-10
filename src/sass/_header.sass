@@ -35,8 +35,6 @@
 
 .page-nav_link
   align-items: center
-  border-bottom: 5px solid transparent
-  border-top: 5px solid transparent
   color: $blue-gray
   display: flex
   font-size: 17px
@@ -46,13 +44,14 @@
   margin-right: 15px
   text-transform: uppercase
 
-  &:hover
-    border-bottom: 5px solid $accent-color
+  &.hover
     color: $accent-color
 
-  &.selected
-    border-bottom: 5px solid $accent-color
-    color: $accent-color
+.page-nav_selected-link-underline
+  background: $accent-color
+  height: 5px
+  position: absolute
+  transition: all .5s cubic-bezier(.55, 0, .1, 1)
 
 .page-header_auth
   display: flex
