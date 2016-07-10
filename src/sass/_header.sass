@@ -1,43 +1,88 @@
-.page-footer
-  align-items: center
-  background: $footer-bg
-  color: $text-gray
+.page-header
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
   display: flex
-  height: 70px
+  height: $page-header-height
   justify-content: space-between
-  padding: 0 70px
 
-.page-footer_contacts
+.page-header-left-wrap
+  display: flex
+
+.page-header_menu-trigger
   align-items: center
+  color: $blue-gray
+  cursor: pointer
   display: flex
-  flex-direction: column
+  font-size: 20px
+  height: $page-header-height
+  justify-content: center
+  min-width: 90px
 
-  &_number
-    color: $white
-    text-decoration: none
-
-  &_email
-    color: $text-gray
-    text-decoration: none
-
-.page-footer_social
-  display: flex
-
-.page-footer_social-wrap
+.page-logo
   align-items: center
-  background: darken($footer-bg, 10%)
-  border-radius: 50%
+  background: $accent-color
   display: flex
-  height: 40px
+  justify-content: center
+  margin-right: 30px
+  min-width: 210px
+
+  img
+    width: 165px
+
+.nav
+  display: flex
+  height: $page-header-height
+  position: relative
+
+.page-nav_link
+  align-items: center
+  border-bottom: 5px solid transparent
+  border-top: 5px solid transparent
+  color: $blue-gray
+  display: flex
+  font-size: 17px
+  height: $page-header-height
   justify-content: center
   margin-left: 15px
-  width: 40px
+  margin-right: 15px
+  text-transform: uppercase
 
   &:hover
-    background: $red
+    border-bottom: 5px solid $accent-color
+    color: $accent-color
 
-@media only screen and (max-width: 480px)
-  .page-footer
-    flex-direction: column
-    height: 150px
-    padding: 10px 20px
+  &.selected
+    border-bottom: 5px solid $accent-color
+    color: $accent-color
+
+.page-header_auth
+  display: flex
+  padding-right: 25px
+
+  &_link
+    align-items: center
+    color: $blue-gray
+    display: flex
+    font-size: 17px
+    justify-content: flex-end
+    text-transform: uppercase
+
+    &:hover
+      color: $accent-color
+
+.page-header_auth_link-divider
+  align-items: center
+  color: $blue-gray
+  display: flex
+  font-size: 17px
+  padding: 0 5px
+
+.page-header_search-ico
+  align-items: center
+  color: $blue-gray
+  cursor: pointer
+  display: flex
+  font-size: 19px
+  margin-right: 20px
+
+  &:hover
+    color: $accent-color

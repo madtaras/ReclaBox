@@ -24,9 +24,13 @@
     "type": "git",
     "url": "git+git@github.com:madtaras/HotPeppers.git"
   },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp --prod"
+  },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap-grid": "^2.0.1",
     "jquery": "^3.1.0",
     "materialize-css": "^0.97.6",
     "pickadate": "^3.5.6"

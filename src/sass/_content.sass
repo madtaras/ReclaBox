@@ -1,0 +1,271 @@
+.content
+  color: $blue-gray
+  margin: 0 auto
+  width: 750px
+
+.path-to-this-page
+  color: $gray
+  font-size: 12px
+  margin-top: 45px
+
+.page-subheading
+  font-size: 12px
+  font-weight: bold
+  margin-top: 10px
+  text-transform: uppercase
+
+.page-heading
+  color: $accent-color
+  font-size: 24px
+  font-weight: bold
+  margin-bottom: 10px
+  margin-top: 10px
+
+.page-descr
+  font-size: 15px
+
+.sharing-block
+  display: flex
+  height: 27px
+  justify-content: space-between
+  margin-top: 15px
+
+.sharing-block_left
+  position: relative
+
+.sharing-block_right
+  align-items: center
+  background: $light-gray-bg
+  border-radius: 18px
+  display: flex
+  justify-content: space-between
+  padding: 5px
+  width: 155px
+
+  .btn-floating
+    background-color: transparent
+    box-shadow: none
+    opacity: .4
+
+    &:hover
+      opacity: 1
+
+    i
+      color: $mail-gray
+      font-size: 1.3rem
+
+
+.sharing-block_favorite-btn
+  opacity: 1 !important
+
+  i:first-child
+    display: block
+    opacity: .4
+
+  i:last-child
+    display: none
+
+  &.favorited
+    i:first-child
+      display: none
+
+    i:last-child
+      color: $accent-color
+      display: block
+      opacity: 1
+
+%sharing-block-item
+  border-radius: 18px
+  height: 27px
+  left: 0
+  position: absolute
+  top: 0
+
+.sharing-block_facebook
+  @extend %sharing-block-item
+  background: $facebook-blue
+  width: 83px
+
+.sharing-block_hangouts
+  @extend %sharing-block-item
+  background: $hangouts-green
+  width: 116px
+
+.sharing-block_google-plus
+  @extend %sharing-block-item
+  background: $google-plus-red
+  width: 149px
+
+.sharing-block_vk
+  @extend %sharing-block-item
+  background: $vk-blue
+  width: 182px
+
+.sharing-block_mail
+  @extend %sharing-block-item
+  background: $mail-gray
+  width: 215px
+
+.sharing-block_plus
+  @extend %sharing-block-item
+  background: $light-gray-bg
+  padding-right: 5px
+  text-align: right
+  width: 248px
+
+  i
+    vertical-align: middle
+
+.sharing-block_count
+  @extend %sharing-block-item
+  align-items: center
+  background: $light-gray-bg
+  display: flex
+  font-size: 15px
+  justify-content: center
+  left: 253px
+  width: 45px
+
+
+.section-heading
+  background: $light-gray-bg
+  color: $blue-gray-darker
+  display: inline-block
+  font-size: 13px
+  line-height: 1
+  margin-bottom: 0
+  padding: 9px 12px
+  text-transform: uppercase
+
+.content-wrapper
+  display: flex
+  justify-content: space-between
+
+.content_main
+  width: 510px
+
+.content_sidebar
+  width: 215px
+
+.text-card
+  font-size: 14px
+
+  .first-word-highlighted
+      color: $accent-color
+      font-size: 23px
+      font-weight: bold
+
+  p
+    margin-bottom: 15px
+    padding: 15px 25px 0
+
+    &:last-child
+      padding-bottom: 15px
+
+  .dialog
+    background: $light-gray-bg
+    margin: 0 25px
+    padding: 10px 30px
+
+  .social-icons-and-author
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+    .author
+      align-items: flex-end
+      display: flex
+      flex-direction: column
+      padding-right: 40px
+
+      .name
+        color: $blue-gray-darker
+        font-size: 16px
+
+      .position
+        font-size: 13px
+
+  .social-icons
+    display: flex
+    padding-left: 38px
+
+    .social-icon
+      align-items: center
+      border-radius: 50%
+      display: flex
+      height: 20px
+      justify-content: center
+      margin-right: 10px
+      width: 20px
+
+      img
+        height: 40%
+
+    .social-icons-fb
+      background-color: $facebook-blue
+
+    .social-icons-twitter
+      background-color: $twitter-blue
+
+    .social-icons-vk
+      background-color: $vk-blue
+
+
+p.highlighted-accent
+  border-left: 8px solid $accent-color
+  color: $accent-color
+  font-size: 22px
+  font-style: italic
+  line-height: 1.2
+  margin-top: -2px
+  padding: 0 30px
+
+.comment
+  font-size: 12px
+  padding: 14px 17px
+
+  &.highlighted-accent
+    border-left: 8px solid $accent-color
+
+  &.highlighted-main
+    border-left: 8px solid $blue-gray-darker
+
+.reaction
+  align-items: center
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin-top: 15px
+
+  h4
+    font-size: 14px
+    // margin: 0
+    text-transform: uppercase
+
+.reaction-icons
+  margin-bottom: 15px
+
+  .btn-floating
+    background: transparent
+    box-shadow: none
+
+  img
+    height: 100%
+
+.map
+  margin-bottom: -15px
+  margin-top: 15px
+  width: 100%
+
+.mehr-uber-links
+  display: flex
+  flex-direction: column
+  margin-top: 15px
+  padding: 8px 10px
+
+  .mehr-uber-link
+    color: $blue-gray-darker
+    line-height: 1.9
+
+    &:hover
+      text-decoration: underline
